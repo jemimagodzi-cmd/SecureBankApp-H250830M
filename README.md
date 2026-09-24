@@ -77,3 +77,22 @@ The `Account` class extends the `BankAccount` class.
 
 ```java
 public class Account extends BankAccount
+This allows `Account` to inherit common banking functionality from `BankAccount`.
+
+### Polymorphism
+
+The `displayAccountType()` method is defined in `BankAccount` and overridden in `Account`.
+
+The application also demonstrates polymorphism by using a `BankAccount` reference to refer to an `Account` object.
+
+### Abstraction
+
+Different classes are responsible for different parts of the application.
+
+For example:
+
+- `Account` handles banking operations.
+- `Transaction` handles transaction information.
+- `PasswordUtil` handles password hashing and verification.
+- `UserStorage` handles user data storage.
+- `AccountStorage` handles account and transaction storage.
