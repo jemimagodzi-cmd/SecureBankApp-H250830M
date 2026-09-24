@@ -77,6 +77,8 @@ The `Account` class extends the `BankAccount` class.
 
 ```java
 public class Account extends BankAccount
+```
+
 This allows `Account` to inherit common banking functionality from `BankAccount`.
 
 ### Polymorphism
@@ -96,3 +98,66 @@ For example:
 - `PasswordUtil` handles password hashing and verification.
 - `UserStorage` handles user data storage.
 - `AccountStorage` handles account and transaction storage.
+
+## Security Features
+
+The application includes several secure coding practices:
+
+- Password hashing using PBKDF2 with HMAC-SHA256
+- Random password salts
+- Password verification
+- Three-attempt login protection
+- Input validation
+- Insufficient funds checking
+- No plain-text password storage
+- File-based data persistence
+
+## Project Files
+
+| File | Description |
+|---|---|
+| `Main.java` | Main program and user interface |
+| `User.java` | Represents a banking user |
+| `BankAccount.java` | Parent banking account class |
+| `Account.java` | Handles account operations |
+| `Transaction.java` | Represents transactions |
+| `PasswordUtil.java` | Password hashing and verification |
+| `UserStorage.java` | Stores and loads user information |
+| `AccountStorage.java` | Stores and loads account and transaction information |
+| `users.txt` | User data |
+| `accounts.txt` | Account balance data |
+| `transactions.txt` | Transaction data |
+
+## How to Run the Application
+
+### 1. Compile the Java files
+
+Open the terminal in the project folder and run:
+
+```text
+javac Main.java User.java BankAccount.java Account.java Transaction.java PasswordUtil.java UserStorage.java AccountStorage.java
+```
+
+### 2. Run the application
+
+```text
+java Main
+```
+
+### 3. Use the Main Menu
+
+The application provides the following options:
+
+```text
+1. Register
+2. Login
+3. Exit
+```
+
+After successful login, users can access the banking menu.
+
+## Conclusion
+
+The Secure Banking Application demonstrates the development of a simple Java banking system using object-oriented programming and secure coding practices.
+
+The application provides authentication, account management, transactions, transaction history, and file-based data persistence while applying security measures to protect user credentials and account operations.
