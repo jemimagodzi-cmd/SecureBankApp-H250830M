@@ -1,0 +1,7 @@
+Jemima|Deposit|100.0
+Jemima|Deposit|10000.0
+Jemima|Withdrawal|20.0
+Jemima|Withdrawal|2000.0
+Jemima|Deposit|9000.0
+Jemima|Deposit|50.0
+Jemima|Withdrawal|50.0
